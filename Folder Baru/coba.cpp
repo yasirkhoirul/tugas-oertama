@@ -11,7 +11,7 @@ int main(){
 	string operasi;
 	
 	cout<<"PILIH OPERATOR ARITMATIKA"<<endl;
-	cout<<"1. Penn"<<endl;
+	cout<<"1. Penjumlahan"<<endl;
 	cout<<"2. Pengurangan"<<endl;
 	cout<<"3. Perkalian"<<endl;
 	cout<<"4. Pembagian"<<endl;
@@ -25,23 +25,27 @@ int main(){
 	cout<<"Masukan Bilangan kedua : ";
 	cin>>bil2;	
 	
-	switch(pil){
-	        case 1 : hasil=bil1+bil2;
-			operasi='+';
-			break;
-		case 2 : hasil=bil1-bil2;
-			operasi='-';
-			break;
-		case 3 : hasil=bil1*bil2;
-			operasi='*';
-			break;
-		case 4 : hasil=bil1/bil2;
-			operasi='/';
-			break;
-		case 5 : hasil=bil1%bil2;
-			 operasi='%';
-			break;
-		default :
+	if(pil == 1){
+	    hasil=bil1+bil2;
+		operasi='+';
+	}
+	else if(pil == 2) {
+		hasil=bil1-bil2;
+		operasi='-';
+	}
+	else if(pil ==3){
+		hasil=bil1*bil2;
+		operasi='*';
+	}
+	else if(pil == 4){
+		hasil=bil1/bil2;
+		operasi='/';
+	}
+	else if(pil == 5){
+		hasil=bil1%bil2;
+		operasi='%';
+	}
+	else{
 			cout<<"Salah Masukan Operator"<<endl;
 	}
 	cout<<"-----------------------------"<<endl;
