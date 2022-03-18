@@ -10,7 +10,7 @@ int main(){
 	float hasil;
 	string operasi;
 	
-	cout<<"PILIH OPERATOR ARITMATIKA"<<endl;
+	cout<<"PILIH OPRASI ARITMATIKA"<<endl;
 	cout<<"1. Penjumlahan"<<endl;
 	cout<<"2. Pengurangan"<<endl;
 	cout<<"3. Perkalian"<<endl;
@@ -18,7 +18,7 @@ int main(){
 	cout<<"5. Modulus"<<endl;
 	cout<<endl;
 	
-	cout<<"Masukan Pilihan : ";
+	cout<<" : ;PILIHAN ANDA";
 	cin>>pil;
 	cout<<"Masukan Bilangan pertama : ";
 	cin>>bil1;
@@ -46,7 +46,7 @@ int main(){
 		operasi='%';
 	}
 	else{
-			cout<<"Salah Masukan Operator"<<endl;
+			cout<<"Salah BANG"<<endl;
 	}
 	cout<<"-----------------------------"<<endl;
 	cout<<"    "<<bil1<<operasi<<bil2<<"="<<hasil<<endl;
